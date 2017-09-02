@@ -1,0 +1,13 @@
+{% extends 'homepage.html'%}
+
+{% block main_content %}
+<div class="container">
+    <h1>PROFILE DETAIL:</h1>
+    <h1>{{user.username}}</h1>
+    <h1>{{user.email}}</h1>
+    <h1>{{user.profile.job}}</h1>
+    <h1>{{user.profile.location}}</h1>
+    <h1>{{user.profile.preview}}</h1>
+    <hr>
+</div>
+{% endblock %}

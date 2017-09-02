@@ -22,5 +22,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
 
     # balance
-    url(r'', views.homepage, name='homepage'),
+    url(r'^$', views.homepage, name='homepage'),
+    url(r'^profiles/$', views.profile_list, name='profile_list'),
+    url(r'^profiles/(?P<pk>\d+)/$', views.profile_detail, name='profile_detail'),
 ]

@@ -23,6 +23,8 @@ urlpatterns = [
 
     # balance
     url(r'^$', views.homepage, name='homepage'),
+    url(r'^export/$', views.export, name='export'),
+    url(r'^import/$', views.simple_import, name='import'),
     url(r'^profiles/$', views.profile_list, name='profile_list'),
     url(r'^profiles/(?P<pk>\d+)/$', views.profile_detail, name='profile_detail'),
 ]

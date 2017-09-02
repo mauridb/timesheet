@@ -1,0 +1,10 @@
+# virtualenvironment
+venv
+
+#.idea
+.idea
+
+# database sqlite3
+db.sqlite3
+
+# rubbish
